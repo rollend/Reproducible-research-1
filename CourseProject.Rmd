@@ -1,0 +1,22 @@
+---
+title: "ReproResearchCourseProject"
+author: "Shen"
+date: "14 October 2015"
+output: html_document
+---
+```{r Time, echo=FALSE}
+time<-format(Sys.time(), "%a %b %d %X %Y")
+```
+The current time is `r time`.
+
+```{r Loading Data}
+library(ggplot2)
+data<-read.csv("activity.csv")
+summary(data)
+```
+
+
+```{r}
+pairs(data)
+```
+
